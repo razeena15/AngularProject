@@ -1,0 +1,10 @@
+
+
+<div class="container">
+   <app-card *ngFor="let track of tracks"
+    [track]="track"
+    [watchListApi]="watchListApi" (deleteFromWishlist)="deleteFromWishlist($event)"
+    (updateFromWishlist)="updateFromWishlist($event)"
+    [statusCode]="statusCode">
+    </app-card>
+  </div>
